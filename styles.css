@@ -249,3 +249,13 @@ dialog::backdrop { background: #1719169c; backdrop-filter: blur(4px); }
 .contact-illustration svg { display: block; width: 100%; height: auto; }
 .contact-actions { position: relative; z-index: 1; }
 @media (max-width: 700px) { .about-illustration { width: min(70%, 220px); margin-top: 22px; } .contact-illustration { align-self: center; width: 120px; flex-basis: 120px; margin-top: -12px; } }
+
+.cv-download { display: inline-flex; align-items: center; gap: 12px; margin-top: 22px; padding: 12px 17px; border: 1px solid #c7c8be; border-radius: 999px; background: transparent; font-size: 12px; font-weight: 600; transition: .2s; }
+.cv-download span { font-size: 15px; line-height: 1; }
+.cv-download:hover { background: var(--green); border-color: var(--green); transform: translateY(-2px); }
+
+.rate-note { display: grid; gap: 5px; margin-top: 22px; padding-left: 13px; border-left: 2px solid var(--green); }
+.rate-note span { font: 9px var(--mono); letter-spacing: .09em; text-transform: uppercase; color: #a6a99c; }
+.rate-note strong { font: 600 17px var(--display); letter-spacing: -.03em; color: #f4f3ef; }
+.rate-note small { font-size: 11px; color: #adb0a5; }
+@media (max-width: 700px) { .rate-note { margin-top: 17px; } }
